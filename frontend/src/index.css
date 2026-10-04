@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Epilogue', sans-serif;
+    --font-body: 'Hanken Grotesk', sans-serif;
+  }
+
+  body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #F7F6F2;
+    color: #18191C;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Epilogue', sans-serif;
+  }
+}
+
+/* Custom range slider styling */
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #191A1D;
+  cursor: pointer;
+  margin-top: -7px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: transform 0.1s ease;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #E1E2E9;
+  border-radius: 2px;
+}
+input[type=range]:focus {
+  outline: none;
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E1E2E9;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C7C6CB;
+}
+
+/* Radar and chart styling */
+.chart-radar polygon {
+  fill: rgba(25, 28, 32, 0.08);
+  stroke: #18191C;
+  stroke-width: 2;
+}
+.chart-radar polygon.user {
+  fill: rgba(112, 115, 255, 0.22);
+  stroke: #7073ff;
+  stroke-width: 2.5;
+}
+.grid-radar line, .grid-radar circle {
+  stroke: #E1E2E9;
+  stroke-width: 1;
+  fill: none;
+}
+
+/* Card utilities */
+.card-border {
+  border-color: #E7E5E0;
+}
+

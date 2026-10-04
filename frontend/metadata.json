@@ -1,0 +1,6 @@
+{
+  "name": "CareerAI",
+  "description": "AI-Powered Career & Skill Gap Assessment Platform with tailored learning roadmaps, career recommendations, and AI career assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
